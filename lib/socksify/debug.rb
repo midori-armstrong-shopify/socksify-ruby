@@ -2,10 +2,10 @@ module Socksify
   class Color
     class Reset
       def self::to_s
-        "\e[0m\e[37m"
+        "\e[0m\e[0m"
       end
     end
-  
+
     class Red < Color
       def num; 31; end
     end
@@ -15,11 +15,11 @@ module Socksify
     class Yellow < Color
       def num; 33; end
     end
-  
+
     def self::to_s
       new.to_s
     end
-  
+
     def to_s
       "\e[1m\e[#{num}m"
     end

@@ -20,4 +20,10 @@ spec = Gem::Specification.new do |s|
   s.executables = %w{socksify_ruby}
   s.has_rdoc = false
   s.extra_rdoc_files = Dir.glob("doc/**/*") + %w{COPYING}
+  s.required_ruby_version = '>= 2.0.0'
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'vcr'
 end
